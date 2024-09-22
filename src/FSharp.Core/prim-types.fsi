@@ -63,7 +63,7 @@ namespace Microsoft.FSharp.Core
        /// <summary>The mask of values related to the kind of the compiled entity.</summary>
        | KindMask = 31
 
-       /// <summary>Indicates that the compiled entity had private or internal representation in F# source code.</summary>
+      /// <summary>Indicates that the compiled entity had private or internal representation in F# source code.</summary>
        | NonPublicRepresentation = 32
 
     /// <summary>Indicates one or more adjustments to the compiled representation of an F# type or member.</summary>
@@ -2015,10 +2015,10 @@ namespace Microsoft.FSharp.Core
     /// <category>Choices and Results</category>
     [<StructuralEquality; StructuralComparison>]
     [<CompiledName("FSharpChoice`7")>]
-    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7> = 
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7> =
 
       /// <summary>Choice 1 of 7 choices</summary>
-      | Choice1Of7 of 'T1 
+      | Choice1Of7 of 'T1
 
       /// <summary>Choice 2 of 7 choices</summary>
       | Choice2Of7 of 'T2
@@ -2037,7 +2037,631 @@ namespace Microsoft.FSharp.Core
 
       /// <summary>Choice 7 of 7 choices</summary>
       | Choice7Of7 of 'T7
-    
+
+    /// <summary>Helper types for active patterns with 8 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`8")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8> =
+
+      /// <summary>Choice 1 of 8 choices</summary>
+      | Choice1Of8 of 'T1
+
+      /// <summary>Choice 2 of 8 choices</summary>
+      | Choice2Of8 of 'T2
+
+      /// <summary>Choice 3 of 8 choices</summary>
+      | Choice3Of8 of 'T3
+
+      /// <summary>Choice 4 of 8 choices</summary>
+      | Choice4Of8 of 'T4
+
+      /// <summary>Choice 5 of 8 choices</summary>
+      | Choice5Of8 of 'T5
+
+      /// <summary>Choice 6 of 8 choices</summary>
+      | Choice6Of8 of 'T6
+
+      /// <summary>Choice 7 of 8 choices</summary>
+      | Choice7Of8 of 'T7
+
+      /// <summary>Choice 8 of 8 choices</summary>
+      | Choice8Of8 of 'T8
+
+    /// <summary>Helper types for active patterns with 9 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`9")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9> =
+
+      /// <summary>Choice 1 of 9 choices</summary>
+      | Choice1Of9 of 'T1
+
+      /// <summary>Choice 2 of 9 choices</summary>
+      | Choice2Of9 of 'T2
+
+      /// <summary>Choice 3 of 9 choices</summary>
+      | Choice3Of9 of 'T3
+
+      /// <summary>Choice 4 of 9 choices</summary>
+      | Choice4Of9 of 'T4
+
+      /// <summary>Choice 5 of 9 choices</summary>
+      | Choice5Of9 of 'T5
+
+      /// <summary>Choice 6 of 9 choices</summary>
+      | Choice6Of9 of 'T6
+
+      /// <summary>Choice 7 of 9 choices</summary>
+      | Choice7Of9 of 'T7
+
+      /// <summary>Choice 8 of 9 choices</summary>
+      | Choice8Of9 of 'T8
+
+      /// <summary>Choice 9 of 9 choices</summary>
+      | Choice9Of9 of 'T9
+
+    /// <summary>Helper types for active patterns with 10 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`10")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10> =
+
+      /// <summary>Choice 1 of 10 choices</summary>
+      | Choice1Of10 of 'T1
+
+      /// <summary>Choice 2 of 10 choices</summary>
+      | Choice2Of10 of 'T2
+
+      /// <summary>Choice 3 of 10 choices</summary>
+      | Choice3Of10 of 'T3
+
+      /// <summary>Choice 4 of 10 choices</summary>
+      | Choice4Of10 of 'T4
+
+      /// <summary>Choice 5 of 10 choices</summary>
+      | Choice5Of10 of 'T5
+
+      /// <summary>Choice 6 of 10 choices</summary>
+      | Choice6Of10 of 'T6
+
+      /// <summary>Choice 7 of 10 choices</summary>
+      | Choice7Of10 of 'T7
+
+      /// <summary>Choice 8 of 10 choices</summary>
+      | Choice8Of10 of 'T8
+
+      /// <summary>Choice 9 of 10 choices</summary>
+      | Choice9Of10 of 'T9
+
+      /// <summary>Choice 10 of 10 choices</summary>
+      | Choice10Of10 of 'T10
+
+    /// <summary>Helper types for active patterns with 11 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`11")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11> =
+
+      /// <summary>Choice 1 of 11 choices</summary>
+      | Choice1Of11 of 'T1
+
+      /// <summary>Choice 2 of 11 choices</summary>
+      | Choice2Of11 of 'T2
+
+      /// <summary>Choice 3 of 11 choices</summary>
+      | Choice3Of11 of 'T3
+
+      /// <summary>Choice 4 of 11 choices</summary>
+      | Choice4Of11 of 'T4
+
+      /// <summary>Choice 5 of 11 choices</summary>
+      | Choice5Of11 of 'T5
+
+      /// <summary>Choice 6 of 11 choices</summary>
+      | Choice6Of11 of 'T6
+
+      /// <summary>Choice 7 of 11 choices</summary>
+      | Choice7Of11 of 'T7
+
+      /// <summary>Choice 8 of 11 choices</summary>
+      | Choice8Of11 of 'T8
+
+      /// <summary>Choice 9 of 11 choices</summary>
+      | Choice9Of11 of 'T9
+
+      /// <summary>Choice 10 of 11 choices</summary>
+      | Choice10Of11 of 'T10
+
+      /// <summary>Choice 11 of 11 choices</summary>
+      | Choice11Of11 of 'T11
+
+    /// <summary>Helper types for active patterns with 12 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`12")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12> =
+
+      /// <summary>Choice 1 of 12 choices</summary>
+      | Choice1Of12 of 'T1
+
+      /// <summary>Choice 2 of 12 choices</summary>
+      | Choice2Of12 of 'T2
+
+      /// <summary>Choice 3 of 12 choices</summary>
+      | Choice3Of12 of 'T3
+
+      /// <summary>Choice 4 of 12 choices</summary>
+      | Choice4Of12 of 'T4
+
+      /// <summary>Choice 5 of 12 choices</summary>
+      | Choice5Of12 of 'T5
+
+      /// <summary>Choice 6 of 12 choices</summary>
+      | Choice6Of12 of 'T6
+
+      /// <summary>Choice 7 of 12 choices</summary>
+      | Choice7Of12 of 'T7
+
+      /// <summary>Choice 8 of 12 choices</summary>
+      | Choice8Of12 of 'T8
+
+      /// <summary>Choice 9 of 12 choices</summary>
+      | Choice9Of12 of 'T9
+
+      /// <summary>Choice 10 of 12 choices</summary>
+      | Choice10Of12 of 'T10
+
+      /// <summary>Choice 11 of 12 choices</summary>
+      | Choice11Of12 of 'T11
+
+      /// <summary>Choice 12 of 12 choices</summary>
+      | Choice12Of12 of 'T12
+
+    /// <summary>Helper types for active patterns with 13 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`13")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13> =
+
+      /// <summary>Choice 1 of 13 choices</summary>
+      | Choice1Of13 of 'T1
+
+      /// <summary>Choice 2 of 13 choices</summary>
+      | Choice2Of13 of 'T2
+
+      /// <summary>Choice 3 of 13 choices</summary>
+      | Choice3Of13 of 'T3
+
+      /// <summary>Choice 4 of 13 choices</summary>
+      | Choice4Of13 of 'T4
+
+      /// <summary>Choice 5 of 13 choices</summary>
+      | Choice5Of13 of 'T5
+
+      /// <summary>Choice 6 of 13 choices</summary>
+      | Choice6Of13 of 'T6
+
+      /// <summary>Choice 7 of 13 choices</summary>
+      | Choice7Of13 of 'T7
+
+      /// <summary>Choice 8 of 13 choices</summary>
+      | Choice8Of13 of 'T8
+
+      /// <summary>Choice 9 of 13 choices</summary>
+      | Choice9Of13 of 'T9
+
+      /// <summary>Choice 10 of 13 choices</summary>
+      | Choice10Of13 of 'T10
+
+      /// <summary>Choice 11 of 13 choices</summary>
+      | Choice11Of13 of 'T11
+
+      /// <summary>Choice 12 of 13 choices</summary>
+      | Choice12Of13 of 'T12
+
+      /// <summary>Choice 13 of 13 choices</summary>
+      | Choice13Of13 of 'T13
+
+    /// <summary>Helper types for active patterns with 14 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`14")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14> =
+
+      /// <summary>Choice 1 of 14 choices</summary>
+      | Choice1Of14 of 'T1
+
+      /// <summary>Choice 2 of 14 choices</summary>
+      | Choice2Of14 of 'T2
+
+      /// <summary>Choice 3 of 14 choices</summary>
+      | Choice3Of14 of 'T3
+
+      /// <summary>Choice 4 of 14 choices</summary>
+      | Choice4Of14 of 'T4
+
+      /// <summary>Choice 5 of 14 choices</summary>
+      | Choice5Of14 of 'T5
+
+      /// <summary>Choice 6 of 14 choices</summary>
+      | Choice6Of14 of 'T6
+
+      /// <summary>Choice 7 of 14 choices</summary>
+      | Choice7Of14 of 'T7
+
+      /// <summary>Choice 8 of 14 choices</summary>
+      | Choice8Of14 of 'T8
+
+      /// <summary>Choice 9 of 14 choices</summary>
+      | Choice9Of14 of 'T9
+
+      /// <summary>Choice 10 of 14 choices</summary>
+      | Choice10Of14 of 'T10
+
+      /// <summary>Choice 11 of 14 choices</summary>
+      | Choice11Of14 of 'T11
+
+      /// <summary>Choice 12 of 14 choices</summary>
+      | Choice12Of14 of 'T12
+
+      /// <summary>Choice 13 of 14 choices</summary>
+      | Choice13Of14 of 'T13
+
+      /// <summary>Choice 14 of 14 choices</summary>
+      | Choice14Of14 of 'T14
+
+    /// <summary>Helper types for active patterns with 15 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`15")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15> =
+
+      /// <summary>Choice 1 of 15 choices</summary>
+      | Choice1Of15 of 'T1
+
+      /// <summary>Choice 2 of 15 choices</summary>
+      | Choice2Of15 of 'T2
+
+      /// <summary>Choice 3 of 15 choices</summary>
+      | Choice3Of15 of 'T3
+
+      /// <summary>Choice 4 of 15 choices</summary>
+      | Choice4Of15 of 'T4
+
+      /// <summary>Choice 5 of 15 choices</summary>
+      | Choice5Of15 of 'T5
+
+      /// <summary>Choice 6 of 15 choices</summary>
+      | Choice6Of15 of 'T6
+
+      /// <summary>Choice 7 of 15 choices</summary>
+      | Choice7Of15 of 'T7
+
+      /// <summary>Choice 8 of 15 choices</summary>
+      | Choice8Of15 of 'T8
+
+      /// <summary>Choice 9 of 15 choices</summary>
+      | Choice9Of15 of 'T9
+
+      /// <summary>Choice 10 of 15 choices</summary>
+      | Choice10Of15 of 'T10
+
+      /// <summary>Choice 11 of 15 choices</summary>
+      | Choice11Of15 of 'T11
+
+      /// <summary>Choice 12 of 15 choices</summary>
+      | Choice12Of15 of 'T12
+
+      /// <summary>Choice 13 of 15 choices</summary>
+      | Choice13Of15 of 'T13
+
+      /// <summary>Choice 14 of 15 choices</summary>
+      | Choice14Of15 of 'T14
+
+      /// <summary>Choice 15 of 15 choices</summary>
+      | Choice15Of15 of 'T15
+
+    /// <summary>Helper types for active patterns with 16 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`16")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16> =
+
+      /// <summary>Choice 1 of 16 choices</summary>
+      | Choice1Of16 of 'T1
+
+      /// <summary>Choice 2 of 16 choices</summary>
+      | Choice2Of16 of 'T2
+
+      /// <summary>Choice 3 of 16 choices</summary>
+      | Choice3Of16 of 'T3
+
+      /// <summary>Choice 4 of 16 choices</summary>
+      | Choice4Of16 of 'T4
+
+      /// <summary>Choice 5 of 16 choices</summary>
+      | Choice5Of16 of 'T5
+
+      /// <summary>Choice 6 of 16 choices</summary>
+      | Choice6Of16 of 'T6
+
+      /// <summary>Choice 7 of 16 choices</summary>
+      | Choice7Of16 of 'T7
+
+      /// <summary>Choice 8 of 16 choices</summary>
+      | Choice8Of16 of 'T8
+
+      /// <summary>Choice 9 of 16 choices</summary>
+      | Choice9Of16 of 'T9
+
+      /// <summary>Choice 10 of 16 choices</summary>
+      | Choice10Of16 of 'T10
+
+      /// <summary>Choice 11 of 16 choices</summary>
+      | Choice11Of16 of 'T11
+
+      /// <summary>Choice 12 of 16 choices</summary>
+      | Choice12Of16 of 'T12
+
+      /// <summary>Choice 13 of 16 choices</summary>
+      | Choice13Of16 of 'T13
+
+      /// <summary>Choice 14 of 16 choices</summary>
+      | Choice14Of16 of 'T14
+
+      /// <summary>Choice 15 of 16 choices</summary>
+      | Choice15Of16 of 'T15
+
+      /// <summary>Choice 16 of 16 choices</summary>
+      | Choice16Of16 of 'T16
+
+    /// <summary>Helper types for active patterns with 17 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`17")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16,'T17> =
+
+      /// <summary>Choice 1 of 17 choices</summary>
+      | Choice1Of17 of 'T1
+
+      /// <summary>Choice 2 of 17 choices</summary>
+      | Choice2Of17 of 'T2
+
+      /// <summary>Choice 3 of 17 choices</summary>
+      | Choice3Of17 of 'T3
+
+      /// <summary>Choice 4 of 17 choices</summary>
+      | Choice4Of17 of 'T4
+
+      /// <summary>Choice 5 of 17 choices</summary>
+      | Choice5Of17 of 'T5
+
+      /// <summary>Choice 6 of 17 choices</summary>
+      | Choice6Of17 of 'T6
+
+      /// <summary>Choice 7 of 17 choices</summary>
+      | Choice7Of17 of 'T7
+
+      /// <summary>Choice 8 of 17 choices</summary>
+      | Choice8Of17 of 'T8
+
+      /// <summary>Choice 9 of 17 choices</summary>
+      | Choice9Of17 of 'T9
+
+      /// <summary>Choice 10 of 17 choices</summary>
+      | Choice10Of17 of 'T10
+
+      /// <summary>Choice 11 of 17 choices</summary>
+      | Choice11Of17 of 'T11
+
+      /// <summary>Choice 12 of 17 choices</summary>
+      | Choice12Of17 of 'T12
+
+      /// <summary>Choice 13 of 17 choices</summary>
+      | Choice13Of17 of 'T13
+
+      /// <summary>Choice 14 of 17 choices</summary>
+      | Choice14Of17 of 'T14
+
+      /// <summary>Choice 15 of 17 choices</summary>
+      | Choice15Of17 of 'T15
+
+      /// <summary>Choice 16 of 17 choices</summary>
+      | Choice16Of17 of 'T16
+
+      /// <summary>Choice 17 of 17 choices</summary>
+      | Choice17Of17 of 'T17
+
+    /// <summary>Helper types for active patterns with 18 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`18")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16,'T17,'T18> =
+
+      /// <summary>Choice 1 of 18 choices</summary>
+      | Choice1Of18 of 'T1
+
+      /// <summary>Choice 2 of 18 choices</summary>
+      | Choice2Of18 of 'T2
+
+      /// <summary>Choice 3 of 18 choices</summary>
+      | Choice3Of18 of 'T3
+
+      /// <summary>Choice 4 of 18 choices</summary>
+      | Choice4Of18 of 'T4
+
+      /// <summary>Choice 5 of 18 choices</summary>
+      | Choice5Of18 of 'T5
+
+      /// <summary>Choice 6 of 18 choices</summary>
+      | Choice6Of18 of 'T6
+
+      /// <summary>Choice 7 of 18 choices</summary>
+      | Choice7Of18 of 'T7
+
+      /// <summary>Choice 8 of 18 choices</summary>
+      | Choice8Of18 of 'T8
+
+      /// <summary>Choice 9 of 18 choices</summary>
+      | Choice9Of18 of 'T9
+
+      /// <summary>Choice 10 of 18 choices</summary>
+      | Choice10Of18 of 'T10
+
+      /// <summary>Choice 11 of 18 choices</summary>
+      | Choice11Of18 of 'T11
+
+      /// <summary>Choice 12 of 18 choices</summary>
+      | Choice12Of18 of 'T12
+
+      /// <summary>Choice 13 of 18 choices</summary>
+      | Choice13Of18 of 'T13
+
+      /// <summary>Choice 14 of 18 choices</summary>
+      | Choice14Of18 of 'T14
+
+      /// <summary>Choice 15 of 18 choices</summary>
+      | Choice15Of18 of 'T15
+
+      /// <summary>Choice 16 of 18 choices</summary>
+      | Choice16Of18 of 'T16
+
+      /// <summary>Choice 17 of 18 choices</summary>
+      | Choice17Of18 of 'T17
+
+      /// <summary>Choice 18 of 18 choices</summary>
+      | Choice18Of18 of 'T18
+
+    /// <summary>Helper types for active patterns with 19 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`19")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16,'T17,'T18,'T19> =
+
+      /// <summary>Choice 1 of 19 choices</summary>
+      | Choice1Of19 of 'T1
+
+      /// <summary>Choice 2 of 19 choices</summary>
+      | Choice2Of19 of 'T2
+
+      /// <summary>Choice 3 of 19 choices</summary>
+      | Choice3Of19 of 'T3
+
+      /// <summary>Choice 4 of 19 choices</summary>
+      | Choice4Of19 of 'T4
+
+      /// <summary>Choice 5 of 19 choices</summary>
+      | Choice5Of19 of 'T5
+
+      /// <summary>Choice 6 of 19 choices</summary>
+      | Choice6Of19 of 'T6
+
+      /// <summary>Choice 7 of 19 choices</summary>
+      | Choice7Of19 of 'T7
+
+      /// <summary>Choice 8 of 19 choices</summary>
+      | Choice8Of19 of 'T8
+
+      /// <summary>Choice 9 of 19 choices</summary>
+      | Choice9Of19 of 'T9
+
+      /// <summary>Choice 10 of 19 choices</summary>
+      | Choice10Of19 of 'T10
+
+      /// <summary>Choice 11 of 19 choices</summary>
+      | Choice11Of19 of 'T11
+
+      /// <summary>Choice 12 of 19 choices</summary>
+      | Choice12Of19 of 'T12
+
+      /// <summary>Choice 13 of 19 choices</summary>
+      | Choice13Of19 of 'T13
+
+      /// <summary>Choice 14 of 19 choices</summary>
+      | Choice14Of19 of 'T14
+
+      /// <summary>Choice 15 of 19 choices</summary>
+      | Choice15Of19 of 'T15
+
+      /// <summary>Choice 16 of 19 choices</summary>
+      | Choice16Of19 of 'T16
+
+      /// <summary>Choice 17 of 19 choices</summary>
+      | Choice17Of19 of 'T17
+
+      /// <summary>Choice 18 of 19 choices</summary>
+      | Choice18Of19 of 'T18
+
+      /// <summary>Choice 19 of 19 choices</summary>
+      | Choice19Of19 of 'T19
+
+    /// <summary>Helper types for active patterns with 20 choices.</summary>
+    /// <category>Choices and Results</category>
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`20")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16,'T17,'T18,'T19,'T20> =
+
+      /// <summary>Choice 1 of 20 choices</summary>
+      | Choice1Of20 of 'T1
+
+      /// <summary>Choice 2 of 20 choices</summary>
+      | Choice2Of20 of 'T2
+
+      /// <summary>Choice 3 of 20 choices</summary>
+      | Choice3Of20 of 'T3
+
+      /// <summary>Choice 4 of 20 choices</summary>
+      | Choice4Of20 of 'T4
+
+      /// <summary>Choice 5 of 20 choices</summary>
+      | Choice5Of20 of 'T5
+
+      /// <summary>Choice 6 of 20 choices</summary>
+      | Choice6Of20 of 'T6
+
+      /// <summary>Choice 7 of 20 choices</summary>
+      | Choice7Of20 of 'T7
+
+      /// <summary>Choice 8 of 20 choices</summary>
+      | Choice8Of20 of 'T8
+
+      /// <summary>Choice 9 of 20 choices</summary>
+      | Choice9Of20 of 'T9
+
+      /// <summary>Choice 10 of 20 choices</summary>
+      | Choice10Of20 of 'T10
+
+      /// <summary>Choice 11 of 20 choices</summary>
+      | Choice11Of20 of 'T11
+
+      /// <summary>Choice 12 of 20 choices</summary>
+      | Choice12Of20 of 'T12
+
+      /// <summary>Choice 13 of 20 choices</summary>
+      | Choice13Of20 of 'T13
+
+      /// <summary>Choice 14 of 20 choices</summary>
+      | Choice14Of20 of 'T14
+
+      /// <summary>Choice 15 of 20 choices</summary>
+      | Choice15Of20 of 'T15
+
+      /// <summary>Choice 16 of 20 choices</summary>
+      | Choice16Of20 of 'T16
+
+      /// <summary>Choice 17 of 20 choices</summary>
+      | Choice17Of20 of 'T17
+
+      /// <summary>Choice 18 of 20 choices</summary>
+      | Choice18Of20 of 'T18
+
+      /// <summary>Choice 19 of 20 choices</summary>
+      | Choice19Of20 of 'T19
+
+      /// <summary>Choice 20 of 20 choices</summary>
+      | Choice20Of20 of 'T20
+
     /// <summary>Non-exhaustive match failures will raise the MatchFailureException exception</summary>
     /// <category>Language Primitives</category>
     [<StructuralEquality; NoComparison>]

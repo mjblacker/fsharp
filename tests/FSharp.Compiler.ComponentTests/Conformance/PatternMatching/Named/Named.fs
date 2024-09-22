@@ -341,9 +341,9 @@ but here has type
         |> withOptions ["--test:ErrorRanges"]
         |> typecheck
         |> shouldFail
-        |> withSingleDiagnostic (Error 265, Line 6, Col 53, Line 6, Col 56, "Active patterns cannot return more than 7 possibilities")
-        
-    
+        |> withSingleDiagnostic (Error 265, Line 6, Col 155, Line 6, Col 158, "Active patterns cannot return more than 20 possibilities")
+
+
     // This test was automatically generated (moved from FSharpQA suite - Conformance/PatternMatching/Named)
     [<Theory; Directory(__SOURCE_DIRECTORY__, Includes=[|"E_MulticasePartialNotAllowed01.fs"|])>]
     let ``Named - E_MulticasePartialNotAllowed01_fs - --test:ErrorRanges`` compilation =

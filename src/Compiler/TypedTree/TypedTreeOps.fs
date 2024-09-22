@@ -9210,7 +9210,20 @@ let mkChoiceTyconRef (g: TcGlobals) m n =
      | 5 -> g.choice5_tcr
      | 6 -> g.choice6_tcr
      | 7 -> g.choice7_tcr
-     | _ -> error(Error(FSComp.SR.tastActivePatternsLimitedToSeven(), m))
+     | 8 -> g.choice8_tcr
+     | 9 -> g.choice9_tcr
+     | 10 -> g.choice10_tcr
+     | 11 -> g.choice11_tcr
+     | 12 -> g.choice12_tcr
+     | 13 -> g.choice13_tcr
+     | 14 -> g.choice14_tcr
+     | 15 -> g.choice15_tcr
+     | 16 -> g.choice16_tcr
+     | 17 -> g.choice17_tcr
+     | 18 -> g.choice18_tcr
+     | 19 -> g.choice19_tcr
+     | 20 -> g.choice20_tcr
+     | _ -> error(Error(FSComp.SR.tastActivePatternsLimitedToTwenty(), m))
 
 let mkChoiceTy (g: TcGlobals) m tinst = 
      match List.length tinst with 

@@ -3600,7 +3600,7 @@ namespace Microsoft.FSharp.Core
     
     [<StructuralEquality; StructuralComparison>]
     [<CompiledName("FSharpChoice`7")>]
-    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7> = 
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7> =
         | Choice1Of7 of 'T1
         | Choice2Of7 of 'T2
         | Choice3Of7 of 'T3
@@ -3608,7 +3608,241 @@ namespace Microsoft.FSharp.Core
         | Choice5Of7 of 'T5
         | Choice6Of7 of 'T6
         | Choice7Of7 of 'T7
-          
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`8")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8> =
+        | Choice1Of8 of 'T1
+        | Choice2Of8 of 'T2
+        | Choice3Of8 of 'T3
+        | Choice4Of8 of 'T4
+        | Choice5Of8 of 'T5
+        | Choice6Of8 of 'T6
+        | Choice7Of8 of 'T7
+        | Choice8Of8 of 'T8
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`9")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9> =
+        | Choice1Of9 of 'T1
+        | Choice2Of9 of 'T2
+        | Choice3Of9 of 'T3
+        | Choice4Of9 of 'T4
+        | Choice5Of9 of 'T5
+        | Choice6Of9 of 'T6
+        | Choice7Of9 of 'T7
+        | Choice8Of9 of 'T8
+        | Choice9Of9 of 'T9
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`10")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10> =
+        | Choice1Of10 of 'T1
+        | Choice2Of10 of 'T2
+        | Choice3Of10 of 'T3
+        | Choice4Of10 of 'T4
+        | Choice5Of10 of 'T5
+        | Choice6Of10 of 'T6
+        | Choice7Of10 of 'T7
+        | Choice8Of10 of 'T8
+        | Choice9Of10 of 'T9
+        | Choice10Of10 of 'T10
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`11")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11> =
+        | Choice1Of11 of 'T1
+        | Choice2Of11 of 'T2
+        | Choice3Of11 of 'T3
+        | Choice4Of11 of 'T4
+        | Choice5Of11 of 'T5
+        | Choice6Of11 of 'T6
+        | Choice7Of11 of 'T7
+        | Choice8Of11 of 'T8
+        | Choice9Of11 of 'T9
+        | Choice10Of11 of 'T10
+        | Choice11Of11 of 'T11
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`12")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12> =
+        | Choice1Of12 of 'T1
+        | Choice2Of12 of 'T2
+        | Choice3Of12 of 'T3
+        | Choice4Of12 of 'T4
+        | Choice5Of12 of 'T5
+        | Choice6Of12 of 'T6
+        | Choice7Of12 of 'T7
+        | Choice8Of12 of 'T8
+        | Choice9Of12 of 'T9
+        | Choice10Of12 of 'T10
+        | Choice11Of12 of 'T11
+        | Choice12Of12 of 'T12
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`13")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13> =
+        | Choice1Of13 of 'T1
+        | Choice2Of13 of 'T2
+        | Choice3Of13 of 'T3
+        | Choice4Of13 of 'T4
+        | Choice5Of13 of 'T5
+        | Choice6Of13 of 'T6
+        | Choice7Of13 of 'T7
+        | Choice8Of13 of 'T8
+        | Choice9Of13 of 'T9
+        | Choice10Of13 of 'T10
+        | Choice11Of13 of 'T11
+        | Choice12Of13 of 'T12
+        | Choice13Of13 of 'T13
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`14")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14> =
+        | Choice1Of14 of 'T1
+        | Choice2Of14 of 'T2
+        | Choice3Of14 of 'T3
+        | Choice4Of14 of 'T4
+        | Choice5Of14 of 'T5
+        | Choice6Of14 of 'T6
+        | Choice7Of14 of 'T7
+        | Choice8Of14 of 'T8
+        | Choice9Of14 of 'T9
+        | Choice10Of14 of 'T10
+        | Choice11Of14 of 'T11
+        | Choice12Of14 of 'T12
+        | Choice13Of14 of 'T13
+        | Choice14Of14 of 'T14
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`15")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15> =
+        | Choice1Of15 of 'T1
+        | Choice2Of15 of 'T2
+        | Choice3Of15 of 'T3
+        | Choice4Of15 of 'T4
+        | Choice5Of15 of 'T5
+        | Choice6Of15 of 'T6
+        | Choice7Of15 of 'T7
+        | Choice8Of15 of 'T8
+        | Choice9Of15 of 'T9
+        | Choice10Of15 of 'T10
+        | Choice11Of15 of 'T11
+        | Choice12Of15 of 'T12
+        | Choice13Of15 of 'T13
+        | Choice14Of15 of 'T14
+        | Choice15Of15 of 'T15
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`16")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16> =
+        | Choice1Of16 of 'T1
+        | Choice2Of16 of 'T2
+        | Choice3Of16 of 'T3
+        | Choice4Of16 of 'T4
+        | Choice5Of16 of 'T5
+        | Choice6Of16 of 'T6
+        | Choice7Of16 of 'T7
+        | Choice8Of16 of 'T8
+        | Choice9Of16 of 'T9
+        | Choice10Of16 of 'T10
+        | Choice11Of16 of 'T11
+        | Choice12Of16 of 'T12
+        | Choice13Of16 of 'T13
+        | Choice14Of16 of 'T14
+        | Choice15Of16 of 'T15
+        | Choice16Of16 of 'T16
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`17")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16,'T17> =
+        | Choice1Of17 of 'T1
+        | Choice2Of17 of 'T2
+        | Choice3Of17 of 'T3
+        | Choice4Of17 of 'T4
+        | Choice5Of17 of 'T5
+        | Choice6Of17 of 'T6
+        | Choice7Of17 of 'T7
+        | Choice8Of17 of 'T8
+        | Choice9Of17 of 'T9
+        | Choice10Of17 of 'T10
+        | Choice11Of17 of 'T11
+        | Choice12Of17 of 'T12
+        | Choice13Of17 of 'T13
+        | Choice14Of17 of 'T14
+        | Choice15Of17 of 'T15
+        | Choice16Of17 of 'T16
+        | Choice17Of17 of 'T17
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`18")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16,'T17,'T18> =
+        | Choice1Of18 of 'T1
+        | Choice2Of18 of 'T2
+        | Choice3Of18 of 'T3
+        | Choice4Of18 of 'T4
+        | Choice5Of18 of 'T5
+        | Choice6Of18 of 'T6
+        | Choice7Of18 of 'T7
+        | Choice8Of18 of 'T8
+        | Choice9Of18 of 'T9
+        | Choice10Of18 of 'T10
+        | Choice11Of18 of 'T11
+        | Choice12Of18 of 'T12
+        | Choice13Of18 of 'T13
+        | Choice14Of18 of 'T14
+        | Choice15Of18 of 'T15
+        | Choice16Of18 of 'T16
+        | Choice17Of18 of 'T17
+        | Choice18Of18 of 'T18
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`19")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16,'T17,'T18,'T19> =
+        | Choice1Of19 of 'T1
+        | Choice2Of19 of 'T2
+        | Choice3Of19 of 'T3
+        | Choice4Of19 of 'T4
+        | Choice5Of19 of 'T5
+        | Choice6Of19 of 'T6
+        | Choice7Of19 of 'T7
+        | Choice8Of19 of 'T8
+        | Choice9Of19 of 'T9
+        | Choice10Of19 of 'T10
+        | Choice11Of19 of 'T11
+        | Choice12Of19 of 'T12
+        | Choice13Of19 of 'T13
+        | Choice14Of19 of 'T14
+        | Choice15Of19 of 'T15
+        | Choice16Of19 of 'T16
+        | Choice17Of19 of 'T17
+        | Choice18Of19 of 'T18
+        | Choice19Of19 of 'T19
+
+    [<StructuralEquality; StructuralComparison>]
+    [<CompiledName("FSharpChoice`20")>]
+    type Choice<'T1,'T2,'T3,'T4,'T5,'T6,'T7,'T8,'T9,'T10,'T11,'T12,'T13,'T14,'T15,'T16,'T17,'T18,'T19,'T20> =
+        | Choice1Of20 of 'T1
+        | Choice2Of20 of 'T2
+        | Choice3Of20 of 'T3
+        | Choice4Of20 of 'T4
+        | Choice5Of20 of 'T5
+        | Choice6Of20 of 'T6
+        | Choice7Of20 of 'T7
+        | Choice8Of20 of 'T8
+        | Choice9Of20 of 'T9
+        | Choice10Of20 of 'T10
+        | Choice11Of20 of 'T11
+        | Choice12Of20 of 'T12
+        | Choice13Of20 of 'T13
+        | Choice14Of20 of 'T14
+        | Choice15Of20 of 'T15
+        | Choice16Of20 of 'T16
+        | Choice17Of20 of 'T17
+        | Choice18Of20 of 'T18
+        | Choice19Of20 of 'T19
+        | Choice20Of20 of 'T20
+
     [<StructuralEquality; NoComparison>]
     exception MatchFailureException of string * int * int with 
         override x.Message  = SR.GetString(SR.matchCasesIncomplete)

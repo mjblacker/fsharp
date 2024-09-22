@@ -100,7 +100,7 @@ tastValueHasBeenCopied,"The value has been copied to ensure the original is not 
 tastUnexpectedDecodeOfAutoOpenAttribute,"Unexpected decode of AutoOpenAttribute"
 tastUnexpectedDecodeOfInternalsVisibleToAttribute,"Unexpected decode of InternalsVisibleToAttribute"
 tastUnexpectedDecodeOfInterfaceDataVersionAttribute,"Unexpected decode of InterfaceDataVersionAttribute"
-265,tastActivePatternsLimitedToSeven,"Active patterns cannot return more than 7 possibilities"
+265,tastActivePatternsLimitedToTwenty,"Active patterns cannot return more than 20 possibilities"
 267,tastNotAConstantExpression,"This is not a valid constant expression or custom attribute value"
 ValueNotContainedMutabilityAttributesDiffer,"Module '%s' contains\n    %s    \nbut its signature specifies\n    %s    \nThe mutability attributes differ"
 ValueNotContainedMutabilityNamesDiffer,"Module '%s' contains\n    %s    \nbut its signature specifies\n    %s    \nThe names differ"
